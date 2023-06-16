@@ -1,11 +1,11 @@
-// const ageUser = prompt("Ваш рік народження?")
-// const cityUser = prompt("В якому місті проживаєте?");
-// const sportUser = prompt("Який Ваш улюблений вид спорту?");
-// const citys = ['Київ', 'Вашингтон', 'Лондон'];
-// const sports = ['Footbool', 'Tenis', 'Swimming'];
-// const sportsman = ['А.Шевченко', 'Світоліна', 'М. Романчук'];
+const ageUser = prompt("Ваш рік народження?")
+const cityUser = prompt("В якому місті проживаєте?");
+const sportUser = prompt("Який Ваш улюблений вид спорту?");
+const citys = ['Київ', 'Вашингтон', 'Лондон'];
+const sports = ['Footbool', 'Tenis', 'Swimming'];
+const sportsman = ['А.Шевченко', 'Світоліна', 'М. Романчук'];
 
- let user = '';
+let user = '';
 
 //вік користувача
 let newAge = new Date().getFullYear();
@@ -24,22 +24,21 @@ if(ageUser === null || cityUser === null || sportUser === null){
   if(sportUser === null){
     user += 'Ваш вид спорту! \n'
   }
- }
+}
   else if(ageUser){
   user = (`Вам - ${age} років! \n`)
     
  //місто user
- switch (cityUser){
-    case citys[0]:
-    case citys[1]:
-    case citys[2]:
-       user += `Ти живеш у столиці ${cityUser}! \n`;
-    break;
-    default:
-      user += `Ти живеш у місті ${cityUser}! \n`;
-    break;
+switch (cityUser){
+  case citys[0]:
+  case citys[1]:
+  case citys[2]:
+    user += `Ти живеш у столиці ${cityUser}! \n`;
+  break;
+  default:
+    user += `Ти живеш у місті ${cityUser}! \n`;
+  break;
 }
- 
 switch (sportUser) {
   case sports[0]:
     user += `“Круто! Хочеш стати як - ${sportsman[0]}!” \n`;
